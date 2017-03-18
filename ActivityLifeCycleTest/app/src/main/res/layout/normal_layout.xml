@@ -8,9 +8,65 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="mxy.com.activitylifecycletest.NormalActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="THis is a normal activity"/>
+    <TextView
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="请选择您的性别："
+         android:textSize="9pt"
+        />
+     <RadioGroup
+         android:id="@+id/radioGroup"
+         android:contentDescription="性别"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/radioMale"
+             android:text="男"
+             android:checked="true">
+
+         </RadioButton>
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/radioFemale"
+             android:text="女">
+
+         </RadioButton>
+      </RadioGroup>
+    <TextView
+         android:id="@+id/tvSex"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="您的性别是：男"
+         android:textSize="9pt"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择您的家庭情况"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb"
+        android:text="已婚"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb1"
+        android:text="有孩子"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:id="@+id/btnNormal"
+        android:onClick="onClickButton"/>
 </LinearLayout>
