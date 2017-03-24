@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#004422">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_back"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="返回"
+        android:textColor="#f35"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="文本"
+        android:textSize="24sp"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#f35"
+        android:id="@+id/title_edit"
+        />
+
+
+</LinearLayout>

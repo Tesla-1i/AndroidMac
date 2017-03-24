@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.hide();
+        }
         Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,9 +66,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button5 = (Button) findViewById(R.id.button5);
         button5.setOnClickListener(this);
 
-
-
-
+        final TextView textViewTitle = (TextView) findViewById(R.id.title_text);
+        View buttonTitle = (Button)findViewById(R.id.title_back);
+        buttonTitle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             textViewTitle.setText("BACK");
+            }
+        });
     }
 
     @Override
