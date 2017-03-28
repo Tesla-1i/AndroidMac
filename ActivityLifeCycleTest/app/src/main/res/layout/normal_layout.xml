@@ -10,6 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="mxy.com.activitylifecycletest.NormalActivity">
+    <mxy.com.activitylifecycletest.Titlelayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

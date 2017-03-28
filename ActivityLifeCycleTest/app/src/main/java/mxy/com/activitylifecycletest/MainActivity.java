@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 progressDialog.setCancelable(true);
                 progressDialog.show();
                 break;
+            case R.id.
             default:
                 break;
         }

@@ -5,12 +5,14 @@
     android:layout_height="wrap_content"
     android:background="#004422">
     <Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/title_back"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:text="返回"
+
         android:textColor="#f35"/>
     <TextView
         android:layout_width="wrap_content"
@@ -20,16 +22,17 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="文本"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text"
+        android:text="前进"
+        android:textAllCaps="false"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:textColor="#f35"
-        android:id="@+id/title_edit"
+        android:id="@+id/title_go"
         />
 
 
